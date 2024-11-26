@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entrada - Grafo de Entrega</title>
+        <link rel="stylesheet" href="./assets/style/style.css">
+    </head>
+    <body>
+        <h1>Cadastro do Grafo</h1>
+        <form class="container" onsubmit="submitGraph(); return false;">
+            <label for="vertices">Pontos de Entrega (Exemplo: A, B, C, D):</label>
+            <input type="text" id="vertices" required placeholder="A, B, C, D">
+            <span class="info">A, B, C, D, ... </span>
+
+            <label for="edges">Distâncias entre os pontos (Formato: A-B-10):</label>
+            <input type="text" id="edges" required placeholder="Ex: A-B-10, B-C-5, ...">
+            <span class="info">Ex: A-B-10, B-C-5, ... </span>
+
+            <div class="btn-container">
+                <button  type="submit" class="btn" >Analisar o Grafo</button>
+            </div>
+        </form>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
